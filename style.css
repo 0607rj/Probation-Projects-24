@@ -73,7 +73,7 @@ section {
 .main-home {
     width: 100%;
     height: 100vh;
-    background-image: url(banner-3.png);
+    background-image: url(img1.jpg);
     background-position: center;
     background-size: cover;
     display: grid;
@@ -159,26 +159,26 @@ section {
         transition: .5s;
     }
 }
-@media(max-width:750px) {
+/* @media(max-width:750px) {
     .navmenu {
         position: absolute;
         top: 100%;
         right: 0;
         width: 300px;
         height:130vh;
-        background: wheat;
+        background: pink;
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 120px 30px;
         transition: all;
-    }
+    } */
     .navmenu a {
         display: flex;
         margin: 18px 0px;
 
     }
-}
+/* } */
 /*trending section */
 
 .center-text h2 {
@@ -196,13 +196,13 @@ section {
 }
 .products {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px,auto));
+    grid-template-columns: (auto-fit, minmax(260px,auto));
     gap: 2rem;
 
 
 }
 .row {
-    position: relative;
+    display: relative;
     transition: all .42s;
 
 }
@@ -210,6 +210,7 @@ section {
     width: 100%;
     height: auto;
     transition: all .42s;
+    
 
 
 
@@ -219,3 +220,97 @@ section {
     color: crimson;
 
 }
+.products-text h5 {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    color: whitesmoke;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: green;
+    padding: 3px 10px;
+    border-radius: 2px;
+
+
+}
+.heart-icon {
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    margin-right: 160px;
+}
+.heart-icon :hover{
+    color: pink;
+    
+}
+
+
+
+.price h4{
+    color: black;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+    columns: red;
+
+
+
+}
+.price p {
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+/* contact section */
+.contact{
+    background-color: rgb(242, 237, 237);
+
+
+}
+.contact-info {
+    display: flex;
+    grid-template-columns: (auto-fit, minmax(160px,auto));
+    gap: 4rem;
+    
+}
+.first-info img {
+    width: 140px;
+    height: auto;
+}
+.contact-info h4 {
+    font-size: 14px;
+    color: gray;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.contact-info h4:hover{
+    transform: scale(1.1);
+    color: rgb(201, 136, 173);
+}
+.contact-info p {
+    color: rgb(110, 125, 207);
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .42s;
+
+}
+.social-icon  i{
+    color: #565656;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: all .42s;
+
+
+}
+.social-icon i:hover{
+    color: rgb(235, 121, 239);
+    transform: scale(1.2);
+    transition: .6s;
+}
+    
