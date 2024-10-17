@@ -198,13 +198,31 @@ section {
     display: grid;
     grid-template-columns: (auto-fit, minmax(260px,auto));
     gap: 2rem;
-
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: ;
 }
+.products .row img{
+    height: 200px;
+    width: 200px;
+    
+/* } .products .row img:hover{
+    color: pink;
+} */
+
 .row {
     display: relative;
     transition: all .42s;
+    margin: 15px;
 
+}
+.heart-icon {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    font-size: 20px;
+    margin-right: 160px;
 }
 .row img {
     width: 100%;
@@ -234,16 +252,11 @@ section {
 
 
 }
-.heart-icon {
-    position: absolute;
-    right: 0;
-    font-size: 20px;
-    margin-right: 160px;
-}
+
 .heart-icon :hover{
     color: pink;
     
-}
+} 
 
 
 
@@ -272,7 +285,7 @@ section {
 .contact-info {
     display: flex;
     grid-template-columns: (auto-fit, minmax(160px,auto));
-    gap: 4rem;
+    gap: 15rem;
     
 }
 .first-info img {
