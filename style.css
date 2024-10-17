@@ -201,25 +201,23 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
 }
 .products .row img{
-    height: 200px;
-    width: 200px;}
+    height: 300px;
+    width: 300px;
+    transition: all .42s ease;
     
-/* } .products .row img:hover{
-    color: pink;
-} */
-
+}
 .row {
     display: relative;
     transition: all .42s;
-    margin: 15px;
+    margin: 20px;
 
 }
 .heart-icon {
     position: absolute;
-    top: 10%;
+    /* top: 10%; */
     right: 0;
     font-size: 20px;
     margin-right: 160px;
