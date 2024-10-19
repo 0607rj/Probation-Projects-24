@@ -71,7 +71,7 @@ section {
     padding: 5% 10%;
 }
 .main-home {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-image: url(img1.jpg);
     background-position: center;
@@ -234,6 +234,7 @@ section {
 .row img :hover{
     transform: scale(0.9);
     color: crimson;
+
 
 }
 .products-text h5 {
